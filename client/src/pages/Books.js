@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Jumbotron, Container, Row, Col, Card } from "react-bootstrap";
+import { Jumbotron, Container, Row, Col, Card, h1 } from "react-bootstrap";
 import SearchForm from "../components/SearchForm";
 import BookDetail from "../components/BookDetail";
 import API from "../utils/API";
@@ -58,7 +58,9 @@ class Books extends Component {
       <Container>
         <Row>
           <Col size="md-12">
-            <Jumbotron />
+            <Jumbotron>
+              <h1 className="text-center">Google Books Search</h1>
+            </Jumbotron>
           </Col>
         </Row>
         <Row>
