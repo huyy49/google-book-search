@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Col, Row, Container, Card } from "react-bootstrap";
+import { Jumbotron, Col, Row, Container, Card } from "react-bootstrap";
 import SavedBookDetail from "../components/SavedBookDetail";
 import API from "../utils/API";
 
@@ -40,6 +40,13 @@ class SavedBooks extends Component {
   render() {
     return (
       <Container>
+      <Row>
+        <Col size="md-12">
+          <Jumbotron>
+            <h1 className="text-center">Google Books Search</h1>
+          </Jumbotron>
+        </Col>
+      </Row>
         <Row>
           <Col size="md-12">
             {this.state.books.length ? (
